@@ -1,0 +1,155 @@
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+@import '@fontsource/ibm-plex-sans/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 20% 99%;
+    --foreground: 200 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 10%;
+
+    --primary: 173 58% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 15% 95%;
+    --secondary-foreground: 200 25% 20%;
+
+    --muted: 180 10% 94%;
+    --muted-foreground: 200 10% 45%;
+
+    --accent: 173 40% 92%;
+    --accent-foreground: 173 58% 25%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 180 15% 88%;
+    --input: 180 15% 88%;
+    --ring: 173 58% 39%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 180 20% 98%;
+    --sidebar-foreground: 200 25% 20%;
+    --sidebar-primary: 173 58% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 173 40% 92%;
+    --sidebar-accent-foreground: 173 58% 25%;
+    --sidebar-border: 180 15% 90%;
+    --sidebar-ring: 173 58% 39%;
+
+    /* Pharmacy specific tokens */
+    --stock-low: 0 72% 51%;
+    --stock-warning: 38 92% 50%;
+    --stock-ok: 142 71% 45%;
+    --status-pending: 38 92% 50%;
+    --status-completed: 142 71% 45%;
+    --status-billed: 199 89% 48%;
+  }
+
+  .dark {
+    --background: 200 25% 8%;
+    --foreground: 180 15% 95%;
+
+    --card: 200 20% 12%;
+    --card-foreground: 180 15% 95%;
+
+    --popover: 200 20% 12%;
+    --popover-foreground: 180 15% 95%;
+
+    --primary: 173 58% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 15% 18%;
+    --secondary-foreground: 180 15% 90%;
+
+    --muted: 200 15% 20%;
+    --muted-foreground: 180 10% 60%;
+
+    --accent: 173 30% 20%;
+    --accent-foreground: 173 58% 70%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 80% 45%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 70% 45%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 200 15% 22%;
+    --input: 200 15% 22%;
+    --ring: 173 58% 45%;
+
+    --sidebar-background: 200 20% 10%;
+    --sidebar-foreground: 180 15% 90%;
+    --sidebar-primary: 173 58% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 173 30% 18%;
+    --sidebar-accent-foreground: 173 58% 70%;
+    --sidebar-border: 200 15% 18%;
+    --sidebar-ring: 173 58% 45%;
+
+    --stock-low: 0 62% 50%;
+    --stock-warning: 38 80% 50%;
+    --stock-ok: 142 60% 45%;
+    --status-pending: 38 80% 50%;
+    --status-completed: 142 60% 45%;
+    --status-billed: 199 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 shadow-sm;
+  }
+
+  .status-pending {
+    @apply bg-warning/15 text-warning border-warning/30;
+  }
+
+  .status-completed {
+    @apply bg-success/15 text-success border-success/30;
+  }
+
+  .status-billed {
+    @apply bg-info/15 text-info border-info/30;
+  }
+}

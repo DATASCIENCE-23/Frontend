@@ -1,0 +1,110 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(to right, #f7fbff, #deebf7);
+  color: #08306b;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #4292c6;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* Grid Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card-link {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #08306b;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-6px);
+  background: #4292c6;
+  color: white;
+}
+
+/* Page Layout */
+.page-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Cards (Forms) */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #c6dbef;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(to right, #4292c6, #2171b5);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+th {
+  background: #deebf7;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}

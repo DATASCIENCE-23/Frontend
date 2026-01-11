@@ -1,0 +1,51 @@
+body {
+  background: #F7FBFF;
+  color: #08306B;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grid a {
+  background: #DEEBF7;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #08306B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  background: #DEEBF7;
+  padding: 16px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+button {
+  background: #4292C6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #C6DBEF;
+}
